@@ -166,8 +166,8 @@ a{
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner{
     display: flex;
-    transition: all ease .5s;
     background: #DB0032;
+    transition: all ease .5s;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item{
     flex: 1;
@@ -223,7 +223,6 @@ a{
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a:hover{
     color: #fff;
     background: #001952;
-    transition: 0.7s ease-in-out;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
     border-left: 12px solid #fff;
@@ -247,7 +246,7 @@ a{
 .citrus-kong-pov .citrus-kong-carousel .pov2-img{
     border-right: 12px solid #fff;
     border-left: none !important;
-    width: 30%;
+    width: 35%;
 }
 
 .prev:hover, .next:hover{
@@ -333,7 +332,7 @@ a{
 
      /* POV sections */
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
-        height: 52vh;
+        height: 50vh;
     }  
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img{
         width: 115%;
@@ -453,10 +452,22 @@ a{
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
         width: 100%;
+        border-bottom: 12px solid #fff;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img {
+        border-right: none !important;
+        border-left: none !important;
+        border-bottom: 12px solid #fff;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo {
-        max-width: 40%;
+        max-width: 30%;
         margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo img{
+        width: 130px;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
         font-size: 30px;
@@ -467,13 +478,21 @@ a{
         width: 100%;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
-        padding-top: 20px;
+        padding-top: 0px;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a{
         margin: 0 auto 30px;
+        color: #fff;
+        text-transform: capitalize;
+        text-decoration: underline;
+        background: none;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a:hover{
+        color: #001952;
+        background: none;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite:last-child img {
-        width: 122%;
+        width: 125%;
         margin-left: -20%;
     }
 
