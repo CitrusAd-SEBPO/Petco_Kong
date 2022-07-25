@@ -190,9 +190,6 @@ a{
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite{
     width: 50%;
 }
-/* .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite img{
-    width: 106.5%;
-} */
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo{
     max-width: 30%;
 }
@@ -237,7 +234,7 @@ a{
 
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img{
     vertical-align: middle;
-    width: 110%;
+    width: 115%;
 }   
 
 
@@ -290,8 +287,11 @@ a{
 @media only screen and (min-width: 2560px){
 
     /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
+        height: 50vh;
+    } 
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
-        width: 118%;
+        width: 110%;
     }
 
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
@@ -311,10 +311,10 @@ a{
 
      /* POV sections */
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
-        height: 53vh;
+        height: 56vh;
     }  
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
-        width: 118%;
+        width: 115%;
     }
 
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
@@ -333,8 +333,11 @@ a{
 
      /* POV sections */
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
-        height: 50vh;
+        height: 52vh;
     }  
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img{
+        width: 115%;
+    } 
 }
 
 
@@ -344,6 +347,9 @@ a{
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text {
         padding: 0 5%;
     }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
+        height: 50vh;
+    } 
 
 }
 
