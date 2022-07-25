@@ -1,0 +1,322 @@
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+
+ @font-face {
+	font-family: PetcoCircularTT-Regular;
+	src: url(assets/fonts/PetcoCircularTT-Regular.woff2) format("woff2"), url(Assets/fonts/PetcoCircularTT-Regular.woff) format("woff")
+}
+
+@font-face {
+	font-family: PetcoCircularTT-Bold;
+	src: url(assets/fonts/PetcoCircularTT-Bold.woff2) format("woff2"), url(Assets/fonts/PetcoCircularTT-Bold.woff) format("woff")
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Black Italic";
+	src: url("fonts/PetcoCircularTT-BlackItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-BlackItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Bold";
+	src: url("fonts/PetcoCircularTT-Bold.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Bold Italic";
+	src: url("fonts/PetcoCircularTT-BoldItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Book";
+	src: url("fonts/PetcoCircularTT-Book.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Book.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Book Italic";
+	src: url("fonts/PetcoCircularTT-BookItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-BookItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT ExtraBlack";
+	src: url("fonts/PetcoCircularTT-ExtraBlack.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-ExtraBlack.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT ExtraBlack Italic";
+	src: url("fonts/PetcoCircularTT-ExtraBlackItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-ExtraBlackItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Italic";
+	src: url("fonts/PetcoCircularTT-Italic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Italic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Light";
+	src: url("fonts/PetcoCircularTT-Light.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Light.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Light Italic";
+	src: url("fonts/PetcoCircularTT-LightItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-LightItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Medium";
+	src: url("fonts/PetcoCircularTT-Medium.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Medium Italic";
+	src: url("fonts/PetcoCircularTT-MediumItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Regular";
+	src: url("fonts/PetcoCircularTT-Regular.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Thin";
+	src: url("fonts/PetcoCircularTT-Thin.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Thin.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Thin Italic";
+	src: url("fonts/PetcoCircularTT-ThinItalic.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PetcoCircularTT Black";
+	src: url("fonts/PetcoCircularTT-Black.woff2") format("woff2"),
+		 url("fonts/PetcoCircularTT-Black.woff") format("woff");
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.kong-flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.kong-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.kong-container-fluid{
+    width: 100%;
+}
+
+/* POV sections */
+.citrus-kong-pov{
+	min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.citrus-kong-pov .citrus-kong-carousel{
+	overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner{}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item{
+    background: #DB0032;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	min-width: 100%;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper{
+    justify-content: space-between;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text{
+    padding: 50px;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo{
+    max-width: 220px;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+    font-family: "PetcoCircularTT Black" !important;
+    font-size: 35px;
+    color: #fff;
+    padding: 10px 0;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+    font-family: "PetcoCircularTT Book" !important;
+    font-size: 18px;
+    color: #fff;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+    padding-top: 20px;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a{
+    font-family: "PetcoCircularTT Bold" !important;
+    color: #001952;
+    font-size: 16px;
+    padding: 17px;
+    background: #fff;
+    text-transform: uppercase;
+    width: 160px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a:hover{
+    color: #fff;
+    background: #001952;
+    transition: 0.7s ease-in-out;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
+    border-left: 10px solid #fff;
+    vertical-align: middle;
+}   
+
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img{
+    vertical-align: middle;
+}   
+
+
+.citrus-kong-pov .citrus-kong-carousel .pov2{
+    border-right: 10px solid #fff;
+    border-left: none !important;
+}   
+
+.citrus_kong_carousel{
+    height: 400px;
+    width: 100vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 678px;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 13px;
+}
+
+h1{
+    color: #333
+}
+
+.citrus_kong_carousel-inner{
+    height: 100%;
+    /* min-width: 400%; */
+    display: flex;
+    transition: all ease .5s;
+}
+
+.citrus_kong_carousel-item{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.citrus_kong_carousel-controls .prev{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('prev.svg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.citrus_kong_carousel-controls .next{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('next.svg');
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.prev:hover, .next:hover{
+    opacity: 1;
+}
+
+.citrus_kong_carousel-indicators{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.citrus_kong_carousel-indicators span{
+    display: inline-block;
+    background-color: white;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    opacity: .5;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.citrus_kong_carousel-indicators span.active{
+    opacity: 1;
+}
