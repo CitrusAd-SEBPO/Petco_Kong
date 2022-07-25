@@ -152,7 +152,6 @@ a{
 
 /* POV sections */
 .citrus-kong-pov{
-	min-height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -160,28 +159,42 @@ a{
     align-items: center;
 }
 .citrus-kong-pov .citrus-kong-carousel{
-	overflow-x: hidden;
+    overflow-x: hidden;
     position: relative;
     display: flex;
     justify-content: flex-start;
 }
-.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner{}
-.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item{
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner{
+    display: flex;
+    transition: all ease .5s;
     background: #DB0032;
-	display: flex;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item{
+    flex: 1;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	min-width: 100%;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper{
     justify-content: space-between;
+    width: 100%;
+}
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov2-text, .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov3-text{
+    width: 70%;
+    padding: 0 5%;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text{
-    padding: 50px;
+    padding: 5%;
 }
+.citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite{
+    width: 50%;
+}
+/* .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite img{
+    width: 106.5%;
+} */
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo{
-    max-width: 220px;
+    max-width: 30%;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
     font-family: "PetcoCircularTT Black" !important;
@@ -193,6 +206,7 @@ a{
     font-family: "PetcoCircularTT Book" !important;
     font-size: 18px;
     color: #fff;
+    width: 60%;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
     padding-top: 20px;
@@ -215,83 +229,28 @@ a{
     transition: 0.7s ease-in-out;
 }
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
-    border-left: 10px solid #fff;
+    border-left: 12px solid #fff;
     vertical-align: middle;
+    overflow: hidden;
+    height: 40vh;
 }   
 
 .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img{
     vertical-align: middle;
+    width: 110%;
 }   
 
 
-.citrus-kong-pov .citrus-kong-carousel .pov2{
-    border-right: 10px solid #fff;
+.citrus-kong-pov .citrus-kong-carousel .pov2-img{
+    border-right: 12px solid #fff;
     border-left: none !important;
-}   
-
-.citrus_kong_carousel{
-    height: 400px;
-    width: 100vw;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    max-width: 678px;
-    overflow-x: hidden;
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 13px;
+    width: 30%;
 }
 
-h1{
-    color: #333
-}
-
-.citrus_kong_carousel-inner{
-    height: 100%;
-    /* min-width: 400%; */
-    display: flex;
-    transition: all ease .5s;
-}
-
-.citrus_kong_carousel-item{
-    flex: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.citrus_kong_carousel-controls .prev{
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url('prev.svg');
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    opacity: .5;
-}
-
-.citrus_kong_carousel-controls .next{
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-image: url('next.svg');
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    opacity: .5;
+.citrus-kong-pov .citrus-kong-carousel .pov2-img{
+    border-right: 12px solid #fff;
+    border-left: none !important;
+    width: 30%;
 }
 
 .prev:hover, .next:hover{
@@ -300,23 +259,216 @@ h1{
 
 .citrus_kong_carousel-indicators{
     position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: calc(100%/2 - 52px);
     text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 5px;
 }
 
 .citrus_kong_carousel-indicators span{
     display: inline-block;
-    background-color: white;
-    width: 30px;
-    height: 4px;
-    border-radius: 2px;
-    opacity: .5;
+    border: 2px solid #09205c;
+    padding: 7px;
+    border-radius: 20px;
     cursor: pointer;
-    margin: 3px;
+    margin: 0 5px;
 }
 
 .citrus_kong_carousel-indicators span.active{
     opacity: 1;
+    background: #09205c;
+}
+
+
+
+
+
+
+/* Responsive devices */
+@media only screen and (min-width: 2560px){
+
+    /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
+        width: 118%;
+    }
+
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+        font-size: 52px;
+        padding: 20px 0;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+        font-size: 30px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+        padding-top: 30px;
+    }
+
+}
+
+@media only screen and (min-width:1920px) and (max-width: 2559px){
+
+     /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
+        height: 53vh;
+    }  
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
+        width: 118%;
+    }
+
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+        font-size: 52px;
+        padding: 20px 0;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+        font-size: 30px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width:1440px) and (max-width: 1919px){
+
+     /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img{
+        height: 40vh;
+    }  
+}
+
+
+@media only screen and (min-width:1280px) and (max-width: 1439px){
+
+    /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text {
+        padding: 0 5%;
+    }
+
+}
+
+@media only screen and (min-width:1024px) and (max-width: 1279px){
+
+    /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text {
+        padding: 0 5%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+        font-size: 30px;
+        padding: 5px 0;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+        font-size: 16px;
+        width: 80%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+        padding-top: 10px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img, .citrus-kong-pov .citrus-kong-carousel .pov3-img {
+        width: 35%;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 1023px){
+
+    /* POV sections */
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text {
+        padding: 0 7%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+        font-size: 30px;
+        padding: 5px 0;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+        font-size: 14px;
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+        padding-top: 10px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img, .citrus-kong-pov .citrus-kong-carousel .pov3-img {
+        width: 45%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo {
+        max-width: 40%;
+    } 
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
+        width: 140%;
+        margin: 0 0 0 -35%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
+        width: 140%;
+        margin: 0 0 0 -35%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img img{
+        margin: 0 0 0 -25%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov3-img img {
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    /* POV section */
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img {
+        border-right: none !important;
+        border-left: none !important;
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .pov2-img, .citrus-kong-pov .citrus-kong-carousel .pov3-img {
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov2-text, .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov3-text {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite {
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item .pov1-splite:first-child{
+        order: 2;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner {
+        flex-wrap: wrap;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img {
+        border-left: none;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img img {
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__logo {
+        max-width: 40%;
+        margin: 0 auto;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__title{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
+        font-size: 16px;
+        width: 100%;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
+        padding-top: 20px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta a{
+        margin: 0 auto 30px;
+    }
+    .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .pov1-splite:last-child img {
+        width: 122%;
+        margin-left: -20%;
+    }
+
 }
