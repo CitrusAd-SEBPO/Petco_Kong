@@ -557,6 +557,32 @@ a{
     text-align: center;
 }
 
+/* Kong Stuff */
+.citrus-kong-stuff .citrus-kong-stuff__contents{
+    overflow-x: auto;
+}
+.citrus-kong-stuff .citrus-kong-stuff__contents .citrus-kong-stuff__contents--wrapper{
+    overflow: hidden;
+    padding: 20px;
+}
+.citrus-kong-stuff .citrus-kong-stuff__contents .citrus-kong-stuff__contents--wrapper .single-item{
+    padding: 15px;
+}
+.citrus-kong-stuff .citrus-kong-stuff__contents .citrus-kong-stuff__contents--wrapper .single-item .single-item__title{
+    font-family: "PetcoCircularTT Bold" !important;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+.citrus-kong-stuff .citrus-kong-stuff__contents .citrus-kong-stuff__contents--disclaimer{
+    font-family: "PetcoCircularTT Regular" !important;
+    font-size: 18px;
+    color: #030303;
+    text-align: center;
+    padding: 20px;
+}
+
 
 
 
@@ -892,6 +918,12 @@ a{
     }
 
     /* Right kong sizes */
+
+
+    /* Kong Stuff */
+    .citrus-kong-stuff .citrus-kong-stuff__contents .citrus-kong-stuff__contents--wrapper{
+        flex-wrap: wrap;
+    }
  
 
 }
