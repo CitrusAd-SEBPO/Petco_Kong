@@ -308,6 +308,44 @@ a{
     display: block;
 }
 
+/* Video Sections */
+.citrus-kong-videos{
+    background-image: url("images/citrus-kong-video-bg-DSK.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0;
+    padding: 0 5%;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper{
+    justify-content: space-between;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col{
+    width: 50%;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--single-video{
+    padding-bottom: 60px;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--text{
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__title{
+    font-family: "PetcoCircularTT Bold" !important;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__sub-title{
+    max-width: 60%;
+    margin: 0 auto;
+    font-family: "PetcoCircularTT Regular" !important;
+    font-size: 18px;
+}
+.citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col iframe{
+    width: 100%;
+    height: 55vh;
+}
+
 
 
 
@@ -334,6 +372,19 @@ a{
         padding-top: 30px;
     }
 
+    /* Video Sections */
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__title{
+        font-size: 42px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__sub-title{
+        max-width: 70%;
+        font-size: 24px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col iframe{
+        height: 40vh;
+    }
+
+
 }
 
 @media only screen and (min-width:1920px) and (max-width: 2559px){
@@ -355,6 +406,18 @@ a{
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
         padding-top: 30px;
+    }
+
+    /* Video Sections */
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__title{
+        font-size: 42px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__sub-title{
+        max-width: 70%;
+        font-size: 24px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col iframe{
+        height: 45vh;
     }
 }
 
@@ -400,7 +463,19 @@ a{
         padding-top: 10px;
     }
     .citrus-kong-pov .citrus-kong-carousel .pov2-img, .citrus-kong-pov .citrus-kong-carousel .pov3-img {
-        width: 35%;
+        width: 40%;
+    }
+
+    /* Video Sections */
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__title{
+        font-size: 24px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__sub-title{
+        max-width: 70%;
+        font-size: 16px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col iframe{
+        height: 40vh;
     }
 
 }
@@ -441,6 +516,18 @@ a{
     }
     .citrus-kong-pov .citrus-kong-carousel .pov3-img img {
         margin: 0 !important;
+    }
+
+    /* Video Sections */
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__title{
+        font-size: 21px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col .citrus-kong-videos__sub-title{
+        max-width: 90%;
+        font-size: 14px;
+    }
+    .citrus-kong-videos .citrus-kong-videos__wrapper .citrus-kong-videos__wrapper--col iframe{
+        height: 30vh;
     }
 
 }
