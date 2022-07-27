@@ -502,13 +502,14 @@ a{
 
 /* Right kong sizes */
 .citrus-kong-sizes .citrus-kong-sizes__wrapper {
-    align-items: flex-start;
-    justify-content: space-between;
     overflow-x: auto;
 }
 .citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--contents{
  overflow: hidden;
  align-items: flex-end;
+ justify-content: flex-start;
+ width: 100%;
+ overflow-x: auto;
 }
 .citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item{
     padding: 15px;
@@ -517,27 +518,27 @@ a{
     align-items: center;
     justify-content: center;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(1){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(1) img{
     max-width: 60px;
     margin: 0 auto;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(2){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(2) img{
     max-width: 75px;
     margin: 0 auto;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(3){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(3) img{
     max-width: 90px;
     margin: 0 auto;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(4){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(4) img{
     max-width: 105px;
     margin: 0 auto;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(5){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(5) img{
     max-width: 125px;
     margin: 0 auto;
 }
-.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(6){
+.citrus-kong-sizes .citrus-kong-sizes__wrapper .citrus-kong-sizes__wrapper--single-item:nth-child(6) img{
     max-width: 140px;
     margin: 0 auto;
 }
@@ -918,6 +919,7 @@ a{
     }
 
     /* Right kong sizes */
+
 
 
     /* Kong Stuff */
