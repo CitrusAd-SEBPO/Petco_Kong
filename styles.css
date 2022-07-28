@@ -734,7 +734,7 @@ a{
         width: 40%;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img {
-        height: 30vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -766,7 +766,7 @@ a{
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__subhead{
         font-size: 14px;
-        width: 70%;
+        width: 90%;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper .citrus-kong-carousel__inner--item-wrapper-text .item-wrapper__cta{
         padding-top: 10px;
@@ -788,7 +788,7 @@ a{
         margin: 0 !important;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner--item-wrapper-img {
-        height: 30vh;
+        height: 40vh;
     }
     .citrus-kong-pov .citrus-kong-carousel .citrus-kong-carousel__inner .pov2{
         background-image: none;
